@@ -48,3 +48,9 @@ fig
 st.table(data_compiler(delitos(delito)))
 
 # pd.read_excel('data/hurto_automotores2021.xlsx')
+
+import pandas as pd 
+df = pd.read_excel('data/abigeato2021.xlsx')
+
+df['ARMAS_MEDIOS'].value_counts()
+df['GENERO'].value_counts()
