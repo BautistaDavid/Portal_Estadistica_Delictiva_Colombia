@@ -1,4 +1,5 @@
 from turtle import width
+from numpy import tri
 import streamlit as st
 import plotly.graph_objects as go
 from utils import *
@@ -7,6 +8,20 @@ with st.sidebar:
     st.title('Observatorio de Estadisiticas Delictivas Colombia 2021 👮',anchor='#')
     st.markdown(' ## Esta App permite explorar mapas interactivos con información estadísticas de los delitos reportador por la Policía Nacional de Colombia durante el año 2021')
     st.markdown('---')
+    st.markdown('# Autor 👇')
+    col1, col2, col3 = st.columns(3)
+    st.markdown("""
+    <style>
+    .aligncenter {
+    text-align: center;
+    }
+    </style>
+    <p class="aligncenter">
+    <img src="https://raw.githubusercontent.com/borisdayma/dalle-mini/main/img/logo.png"/>
+    </p>
+    """, unsafe_allow_html=True)
+    st.markdown('## David Felipe Bautista Bernal')
+    st.markdown('# [GitHub: BautistaDavid](https://github.com/BautistaDavid)')
 titulo = '''
 <div><span style="font-family: Helvetica; font-size: 36px;"><strong>Observatorio de Estadisiticas Delictivas  Colombia 2021 &#x1f46e;  &#x1f7e1; &#x1f535; &#x1f534;  </strong></span></div><Br>
 '''
@@ -41,16 +56,5 @@ fig.update_layout(mapbox_style="carto-positron",
                         margin=dict(l=0,r=50,b=100,t=40,pad=4
     ),)
 
-fig
-# st.deck_gl_chart(fig)
-# st.sele
+st.plotly_chart(fig)
 
-st.table(data_compiler(delitos(delito)))
-
-# pd.read_excel('data/hurto_automotores2021.xlsx')
-
-import pandas as pd 
-df = pd.read_excel('data/abigeato2021.xlsx')
-
-df['ARMAS_MEDIOS'].value_counts()
-df['GENERO'].value_counts()
