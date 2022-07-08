@@ -1,5 +1,3 @@
-from turtle import width
-from numpy import tri
 import streamlit as st
 import plotly.graph_objects as go
 from utils import *
