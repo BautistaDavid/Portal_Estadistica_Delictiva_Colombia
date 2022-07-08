@@ -9,19 +9,25 @@ with st.sidebar:
     st.markdown(' ## Esta App permite explorar mapas interactivos con información estadísticas de los delitos reportador por la Policía Nacional de Colombia durante el año 2021')
     st.markdown('---')
     st.markdown('# Autor 👇')
-    col1, col2, col3 = st.columns(3)
     st.markdown("""
     <style>
     .aligncenter {
     text-align: center;
+    
     }
     </style>
     <p class="aligncenter">
-    <img src="https://raw.githubusercontent.com/borisdayma/dalle-mini/main/img/logo.png"/>
+    <img src="https://raw.githubusercontent.com/BautistaDavid/Portal_Estadistica_Delictiva_Colombia/main/alien.JPG" style="width: 150px;"/>
     </p>
     """, unsafe_allow_html=True)
-    st.markdown('## David Felipe Bautista Bernal')
-    st.markdown('# [GitHub: BautistaDavid](https://github.com/BautistaDavid)')
+    st.markdown('''
+    # David Felipe Bautista Bernal
+    # [GitHub: BautistaDavid](https://github.com/BautistaDavid)
+    # [Twitter: @PipeBau_](https://twitter.com/PipeBau_)
+    ''')
+    st.markdown('')
+
+
 titulo = '''
 <div><span style="font-family: Helvetica; font-size: 36px;"><strong>Observatorio de Estadisiticas Delictivas  Colombia 2021 &#x1f46e;  &#x1f7e1; &#x1f535; &#x1f534;  </strong></span></div><Br>
 '''
